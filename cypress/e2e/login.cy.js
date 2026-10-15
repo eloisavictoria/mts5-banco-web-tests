@@ -2,6 +2,7 @@ describe('Login', () => {
 
   beforeEach(() => {
     cy.visit('http://localhost:4000')
+    cy.screenshot('login-page');
 
   })
   it('Login com dados válidos deve permitir entrada no sistema', () => {
