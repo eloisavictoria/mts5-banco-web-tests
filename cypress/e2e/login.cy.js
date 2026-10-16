@@ -1,10 +1,11 @@
 describe('Login', () => {
 
   beforeEach(() => {
-   cy.env(['APP_URL']).then(({ APP_URL }) => {
-    cy.visit(APP_URL)
-    //cy.screenshot('login-page')
-  })
+    cy.visit('/');
+  //  cy.env(['APP_URL']).then(({ APP_URL }) => {
+  //   cy.visit(APP_URL)
+  //   //cy.screenshot('login-page')
+  // })
   })
   it('Login com dados válidos deve permitir entrada no sistema', () => {
     
